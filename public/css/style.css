@@ -131,7 +131,7 @@ ion-icon {
 .story {
   width: 66px;
   height: 66px;
-  /*background-image: url("../assets/img/stories_background.jpg");*/
+  background-image: url("../assets/img/stories_background.jpg");
   background-size: cover;
 
   display: flex;
