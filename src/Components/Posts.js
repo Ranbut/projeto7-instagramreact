@@ -1,87 +1,46 @@
 export default function Posts(){
+
+const posts = [{imgPoster: "./assets/img/meowed.svg", namePoster: "meowed", img: "./assets/img/gato-telefone.svg", imgName: "Gato", imgRespond: "./assets/img/respondeai.svg", nameRespond: "respondeai", countRespond: 101523}, 
+{imgPoster: "./assets/img/barked.svg", namePoster: "barked", img: "./assets/img/dog.svg", imgName: "Dog", imgRespond: "./assets/img/adorable_animals.svg", nameRespond: "adorable_animals", countRespond: 99159}, 
+{imgPoster: "./assets/img/respondeai.svg", namePoster: "respondeai", img: "./assets/img/gato-telefone.svg", imgName: "Gato", imgRespond: "./assets/img/respondeai.svg", nameRespond: "respondeai", countRespond: 101523}, ]
+
   return(
-        <div className="feeds">
-        <div className="feed">
-          <div className="topo-feed">
-            <div>
-              <img src="./assets/img/respondeai.svg" />
-              Responde aí
-            </div>
-            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-          </div>
-          <img src="./assets/img/gato-telefone.svg" alt="" />
-          <div class="rodape-feed">
-            <div class="feed-botoes">
-              <div>
-                <ion-icon name="heart-outline"></ion-icon>
-                <ion-icon name="chatbubble-outline"></ion-icon>
-                <ion-icon name="paper-plane-outline"></ion-icon>
-              </div>
-              <ion-icon name="paper-plane-outline"></ion-icon>
-            </div>
-            <div class="feed-curtidas">
-              <img src="./assets/img/respondeai.svg" alt="" />
-              <p>
-                Curtido por <span>respondeai</span> e
-                <span>outras 101.523 pessoas</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="feed">
-          <div class="topo-feed">
-            <div>
-              <img src="./assets/img/respondeai.svg" />
-              Responde aí
-            </div>
-            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-          </div>
-          <img src="./assets/img/gato-telefone.svg" alt="" />
-          <div class="rodape-feed">
-            <div class="feed-botoes">
-              <div>
-                <ion-icon name="heart-outline"></ion-icon>
-                <ion-icon name="chatbubble-outline"></ion-icon>
-                <ion-icon name="paper-plane-outline"></ion-icon>
-              </div>
-              <ion-icon name="paper-plane-outline"></ion-icon>
-            </div>
-            <div class="feed-curtidas">
-              <img src="./assets/img/respondeai.svg" alt="" />
-              <p>
-                Curtido por <span>respondeai</span> e
-                <span>outras 101.523 pessoas</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="feed">
-          <div class="topo-feed">
-            <div>
-              <img src="./assets/img/respondeai.svg" />
-              Responde aí
-            </div>
-            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-          </div>
-          <img src="./assets/img/gato-telefone.svg" alt="" />
-          <div class="rodape-feed">
-            <div class="feed-botoes">
-              <div>
-                <ion-icon name="heart-outline"></ion-icon>
-                <ion-icon name="chatbubble-outline"></ion-icon>
-                <ion-icon name="paper-plane-outline"></ion-icon>
-              </div>
-              <ion-icon name="paper-plane-outline"></ion-icon>
-            </div>
-            <div class="feed-curtidas">
-              <img src="./assets/img/respondeai.svg" alt="" />
-              <p>
-                Curtido por <span>respondeai</span> e
-                <span>outras 101.523 pessoas</span>
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="feeds">
+        {posts.map((props) => (
+          <Post key={props.namePoster} imgPoster={props.imgPoster} namePoster={props.namePoster} img={props.img} imgName={props.imgName} imgRespond={props.imgRespond} nameRespond={props.nameRespond} countRespond={props.countRespond} />
+        ))}
       </div>
     );
+}
+
+function Post(props){
+  return(
+    <div className="feed">
+      <div className="topo-feed">
+        <div>
+              <img src={props.imgPoster} alt={props.namePoster}/>
+              {props.namePoster}
+        </div>
+            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+      </div>
+          <img src={props.img} alt={props.imgName} />
+      <div className="rodape-feed">
+        <div className="feed-botoes">
+          <div>
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            <ion-icon name="paper-plane-outline"></ion-icon>
+          </div>
+            <ion-icon name="paper-plane-outline"></ion-icon>
+        </div>
+            <div className="feed-curtidas">
+              <img src={props.imgRespond} alt={props.nameRespond} />
+              <p>
+                Curtido por <span>{props.nameRespond}</span> e
+                <span> outras {props.countRespond} pessoas</span>
+              </p>
+        </div>
+      </div>
+    </div>
+  );
 }

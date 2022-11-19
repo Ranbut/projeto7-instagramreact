@@ -1,10 +1,10 @@
-import Sugestion from "./Sugestion";
+import Sugestion from "./Sugestions";
 import User from "./User";
 
 export default function SideBar(){
     return(
         <div className="sidebar">
-        <User/>
+        <User />
         <div className="cab-lista-sugestoes">
           <p>Sugestões para você</p>
           <p>Ver tudo</p>

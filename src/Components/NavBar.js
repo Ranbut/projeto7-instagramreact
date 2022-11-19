@@ -16,7 +16,9 @@ export default function NavBar(){
             <div className="busca">
                 <input type="text" placeholder="Pesquisar" />
             </div>
-            <ButtonHeader/>
+            {buttons.map((type) => (
+            <ButtonNavBar key={type}/>
+         ))}
         </div>
         <div className="container-topo mobile">
             <ion-icon name="logo-instagram"></ion-icon>
@@ -27,12 +29,10 @@ export default function NavBar(){
     );
 }
 
-function ButtonHeader(){
+function ButtonNavBar(type){
     return(
     <div className="botoes">
-        {
-        buttons.map((type) => <ion-icon name={type}></ion-icon>)
-        }
+        <ion-icon name={type}></ion-icon>
     </div>
     );
 }
