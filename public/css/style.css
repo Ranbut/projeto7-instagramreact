@@ -197,6 +197,10 @@ ion-icon {
   align-items: center;
 }
 
+ion-icon.liked{
+  color: red;
+}
+
 .feed-curtidas {
   display: flex;
   margin-top: 10px;
