@@ -68,7 +68,7 @@ function Post(props){
               <img src={props.imgRespond} alt={props.nameRespond} />
               <p>
                 Curtido por <span>{props.nameRespond}</span> e
-                <span data-test="likes-number"> outras {isLiked ? props.countRespond + 1 : props.countRespond} pessoas</span>
+                <span data-test="likes-number"> outras <span data-test="likes-number">{isLiked ? props.countRespond + 1 : props.countRespond}</span> pessoas</span>
               </p>
         </div>
       </div>
