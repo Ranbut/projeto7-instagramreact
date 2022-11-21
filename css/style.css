@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background-color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+}
+
+ion-icon {
+  width: 20px;
+  border-radius: 60%;
+}
+
+ion-icon:hover {
+  background-color: grey;
+}
+
+.navbar {
+  border-bottom: 1px solid #dbdbdb;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar-container {
+  height: 54px;
+  width: 935px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile {
+  display: none;
+}
+
+.logo {
+  width: 150px;
+  height: 54px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo > img {
+  width: 103px;
+}
+
+.separador {
+  height: 22px;
+  background-color: #dbdbdb;
+  width: 1px;
+}
+
+.search {
+  width: 235px;
+  height: 54px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search > input {
+  width: 215px;
+  height: 28px;
+  background-color: #fafafa;
+  color: #dbdbdb;
+  border: 1px solid #dbdbdb;
+}
+
+.search > input::placeholder {
+  color: #dbdbdb;
+  text-align: center;
+}
+
+.buttons {
+  width: 100px;
+  height: 54px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 935px;
+  margin: 0 auto;
+  margin-top: 88px;
+
+  display: flex;
+}
+
+.conteudo-princial {
+  width: 614px;
+}
+
+.stories {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  height: 118px;
+
+  display: flex;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.stories ion-icon {
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 48px;
+  right: 5px;
+}
+
+.stories > div {
+  width: 66px;
+  margin: 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.story {
+  width: 66px;
+  height: 66px;
+  background-image: url("../assets/img/stories_background.jpg");
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.posts {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.post {
+  background-color: white;
+  width: 100%;
+  height: 749px;
+  margin-bottom: 60px;
+  border: 1px solid #dbdbdb;
+}
+
+.top-post {
+  width: 100%;
+  height: 52px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-post > div {
+  width: 151px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-post img {
+  width: 32px;
+  height: 32px;
+}
+
+.top-post ion-icon {
+  margin-right: 10px;
+}
+
+.post > img {
+  width: 100%;
+}
+
+.bottom-post {
+  width: 100%;
+  height: 85px;
+  margin-left: 10px;
+}
+
+.button-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.button-post > div {
+  width: 100px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ion-icon.liked{
+  color: red;
+}
+
+ion-icon.heart{
+  z-index: 3;
+  position: relative;
+  bottom: 50%;
+  left: 45%;
+  color: white;
+  animation: scaling 5s 1 normal forwards;
+}
+
+@keyframes scaling {
+  0%   {transform: scale(1);}
+  25%  {transform: scale(5);}
+  75% { transform: scale(5); opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.liked-post {
+  display: flex;
+  margin-top: 10px;
+}
+
+.liked-post img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.liked-post span {
+  color: black;
+  font-weight: bold;
+}
+
+.liked-post p {
+  color: #979797;
+}
+
+.sidebar {
+  width: 321px;
+  height: 200px;
+}
+
+.div-profile {
+  margin-top: 15px;
+  display: flex;
+}
+
+.div-profile > div {
+  margin-left: 10px;
+}
+
+.div-profile p {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.div-profile div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-username {
+  font-weight: 500;
+  color: #262626;
+}
+
+.profile-name {
+  font-weight: 300;
+  color: #706565;
+}
+
+.list-sugestions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.list-sugestions p {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.list-sugestions p:nth-child(1) {
+  color: #8e8e8e;
+}
+
+.list-sugestions p:nth-child(2) {
+  color: #262626;
+}
+
+.sugetion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sugetion-profile {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.sugetion-profile img {
+  width: 32px;
+  height: 32px;
+}
+
+.sugetion-profile div:nth-child(2) {
+  margin-left: 10px;
+}
+
+.sugetion-profile-username {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #262626;
+}
+
+.follows-you {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8e8e8e;
+}
+
+.seguir {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #139ef2;
+}
+
+.info-sobre-intagram p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #c7c7c7;
+  margin: 10px;
+}
+
+.hide{
+  display: none;
+}
+
+@media (max-width: 935px) {
+  .navbar-container,
+  .container {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 614px) {
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .stories {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #e5e5e5;
+  }
+
+  .stories ion-icon {
+    display: none;
+  }
+
+  .stories > div {
+    width: 100%;
+  }
+
+  .story {
+    border-radius: 50%;
+  }
+
+  .story img {
+    width: 100%;
+  }
+}
