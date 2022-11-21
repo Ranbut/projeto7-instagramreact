@@ -201,6 +201,15 @@ ion-icon.liked{
   color: red;
 }
 
+ion-icon.heart-animation{
+  z-index: 1;
+  position: relative;
+  bottom: 40%;
+  left: 46%;
+  scale: 5;
+  color: white;
+}
+
 .feed-curtidas {
   display: flex;
   margin-top: 10px;

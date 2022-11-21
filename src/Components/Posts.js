@@ -50,6 +50,7 @@ function Post(props){
             <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
       </div>
           <img onClick={doubleClick} src={props.img} alt={props.imgName} />
+          <ion-icon class="md hydrated heart-animation" name="heart"></ion-icon>
       <div className="rodape-feed">
         <div className="feed-botoes">
           <div>
