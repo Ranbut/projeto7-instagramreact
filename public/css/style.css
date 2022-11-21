@@ -7,6 +7,11 @@ body {
 
 ion-icon {
   width: 20px;
+  border-radius: 60%;
+}
+
+ion-icon:hover {
+  background-color: grey;
 }
 
 .topo {
@@ -174,6 +179,10 @@ ion-icon {
   height: 32px;
 }
 
+.topo-feed ion-icon {
+  margin-right: 10px;
+}
+
 .feed > img {
   width: 100%;
 }
@@ -181,12 +190,14 @@ ion-icon {
 .rodape-feed {
   width: 100%;
   height: 85px;
+  margin-left: 10px;
 }
 
 .feed-botoes {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 20px;
 }
 
 .feed-botoes > div {
@@ -201,13 +212,20 @@ ion-icon.liked{
   color: red;
 }
 
-ion-icon.heart-animation{
-  z-index: 1;
+ion-icon.heart{
+  z-index: 3;
   position: relative;
-  bottom: 40%;
-  left: 46%;
-  scale: 5;
+  bottom: 50%;
+  left: 45%;
   color: white;
+  animation: scaling 5s 1 normal forwards;
+}
+
+@keyframes scaling {
+  0%   {transform: scale(1);}
+  25%  {transform: scale(5);}
+  75% { transform: scale(5); opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .feed-curtidas {
@@ -333,6 +351,10 @@ ion-icon.heart-animation{
   line-height: 13px;
   color: #c7c7c7;
   margin: 10px;
+}
+
+.hide{
+  display: none;
 }
 
 @media (max-width: 935px) {

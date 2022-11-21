@@ -30,7 +30,7 @@ function Post(props){
         break;
       }
       case 2: {
-        setIsActive(current => !current);
+        setIsActive(true)
         console.log('double click');
         break;
       }
@@ -50,7 +50,6 @@ function Post(props){
             <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
       </div>
           <img onClick={doubleClick} src={props.img} alt={props.imgName} />
-          <ion-icon class="md hydrated heart-animation" name="heart"></ion-icon>
       <div className="rodape-feed">
         <div className="feed-botoes">
           <div>
@@ -68,6 +67,7 @@ function Post(props){
               </p>
         </div>
       </div>
+      <ion-icon class={isActive ? 'md hydrated heart' : 'md hydrated hide'} name="heart"></ion-icon>
     </div>
   );
 }
