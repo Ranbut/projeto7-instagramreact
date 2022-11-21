@@ -81,9 +81,7 @@
     - [X]  Para dar like clicando na imagem, é necessário clicar duas vezes seguidas, rapidamente.
         - Clicar duas vezes com um intervalo de tempo grande NÃO CONFIGURA double click.
 - Animação de coração no double click
-    - [X]  Quando ocorrer o double click na imagem, deverá surgir no centro da imagem um coração, que primeiro cresce e depois desaparece, como na imagem abaixo:
-        
-        ![heart.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90738755-1549-45e0-97a3-045251c75e31/heart.gif)
+    - [X]  Quando ocorrer o double click na imagem, deverá surgir no centro da imagem um coração, que primeiro cresce e depois desaparece.
         
     - [X]  Parâmetros da animação:
         - Escala inicial: 0.2
