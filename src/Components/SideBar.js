@@ -5,7 +5,7 @@ export default function SideBar(){
     return(
         <div className="sidebar">
         <User />
-        <div className="cab-lista-sugestoes">
+        <div className="list-sugestions">
           <p>Sugestões para você</p>
           <p>Ver tudo</p>
         </div>

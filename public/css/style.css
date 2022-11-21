@@ -14,7 +14,7 @@ ion-icon:hover {
   background-color: grey;
 }
 
-.topo {
+.navbar {
   border-bottom: 1px solid #dbdbdb;
   background-color: white;
   position: fixed;
@@ -24,7 +24,7 @@ ion-icon:hover {
   z-index: 1;
 }
 
-.container-topo {
+.navbar-container {
   height: 54px;
   width: 935px;
   margin: 0 auto;
@@ -57,7 +57,7 @@ ion-icon:hover {
   width: 1px;
 }
 
-.busca {
+.search {
   width: 235px;
   height: 54px;
 
@@ -66,7 +66,7 @@ ion-icon:hover {
   align-items: center;
 }
 
-.busca > input {
+.search > input {
   width: 215px;
   height: 28px;
   background-color: #fafafa;
@@ -74,12 +74,12 @@ ion-icon:hover {
   border: 1px solid #dbdbdb;
 }
 
-.busca > input::placeholder {
+.search > input::placeholder {
   color: #dbdbdb;
   text-align: center;
 }
 
-.botoes {
+.buttons {
   width: 100px;
   height: 54px;
 
@@ -144,12 +144,12 @@ ion-icon:hover {
   align-items: center;
 }
 
-.feeds {
+.posts {
   width: 100%;
   margin-top: 24px;
 }
 
-.feed {
+.post {
   background-color: white;
   width: 100%;
   height: 749px;
@@ -157,7 +157,7 @@ ion-icon:hover {
   border: 1px solid #dbdbdb;
 }
 
-.topo-feed {
+.top-post {
   width: 100%;
   height: 52px;
 
@@ -166,7 +166,7 @@ ion-icon:hover {
   align-items: center;
 }
 
-.topo-feed > div {
+.top-post > div {
   width: 151px;
 
   display: flex;
@@ -174,33 +174,33 @@ ion-icon:hover {
   align-items: center;
 }
 
-.topo-feed img {
+.top-post img {
   width: 32px;
   height: 32px;
 }
 
-.topo-feed ion-icon {
+.top-post ion-icon {
   margin-right: 10px;
 }
 
-.feed > img {
+.post > img {
   width: 100%;
 }
 
-.rodape-feed {
+.bottom-post {
   width: 100%;
   height: 85px;
   margin-left: 10px;
 }
 
-.feed-botoes {
+.button-post {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
 }
 
-.feed-botoes > div {
+.button-post > div {
   width: 100px;
   margin: 10px 0;
   display: flex;
@@ -228,23 +228,23 @@ ion-icon.heart{
   100% { opacity: 0; }
 }
 
-.feed-curtidas {
+.liked-post {
   display: flex;
   margin-top: 10px;
 }
 
-.feed-curtidas img {
+.liked-post img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-.feed-curtidas span {
+.liked-post span {
   color: black;
   font-weight: bold;
 }
 
-.feed-curtidas p {
+.liked-post p {
   color: #979797;
 }
 
@@ -283,55 +283,55 @@ ion-icon.heart{
   color: #706565;
 }
 
-.cab-lista-sugestoes {
+.list-sugestions {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
 }
 
-.cab-lista-sugestoes p {
+.list-sugestions p {
   font-weight: 500;
   font-size: 12px;
 }
 
-.cab-lista-sugestoes p:nth-child(1) {
+.list-sugestions p:nth-child(1) {
   color: #8e8e8e;
 }
 
-.cab-lista-sugestoes p:nth-child(2) {
+.list-sugestions p:nth-child(2) {
   color: #262626;
 }
 
-.sugestao {
+.sugetion {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.sugestao-profile {
+.sugetion-profile {
   display: flex;
   align-items: center;
   margin: 10px;
 }
 
-.sugestao-profile img {
+.sugetion-profile img {
   width: 32px;
   height: 32px;
 }
 
-.sugestao-profile div:nth-child(2) {
+.sugetion-profile div:nth-child(2) {
   margin-left: 10px;
 }
 
-.sugestao-profile-username {
+.sugetion-profile-username {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #262626;
 }
 
-.segue-voce {
+.follows-you {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -358,7 +358,7 @@ ion-icon.heart{
 }
 
 @media (max-width: 935px) {
-  .container-topo,
+  .navbar-container,
   .container {
     width: 100%;
   }

@@ -6,7 +6,7 @@ export default function Sugestions(){
   {img: "./assets/img/smallcutecats.svg", name: "smallcutecats", itIs: "Segue Você"}]
 
   return(
-        <div className="sugestoes">
+        <div className="sugetions">
           {sugestions.map((props) => (
             <Sugestion key={props.name} img={props.img} name={props.name} itIs={props.itIs} />
          ))}
@@ -16,14 +16,14 @@ export default function Sugestions(){
 
 function Sugestion(props){
   return (
-  <div className="sugestao">
-    <div className="sugestao-profile">
+  <div className="sugetion">
+    <div className="sugetion-profile">
       <div>
         <img src={props.img} alt={props.name}/>
       </div>
       <div>
-        <p className="sugestao-profile-username">{props.name}</p>
-        <p className="segue-voce">{props.itIs}</p>
+        <p className="sugetion-profile-username">{props.name}</p>
+        <p className="follows-you">{props.itIs}</p>
       </div>
     </div>
     <p className="seguir">Seguir</p>
