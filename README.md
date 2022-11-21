@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Requisitos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Geral
+    - [X]  Você deve criar seu projeto usando o comando que demos do `create-react-app`
+        
+        ```bash
+        create-react-app nome-do-projeto --template @bootcamp-ra/cra-template-semana1
+        ```
+        
+    - [X]  Por padrão, o `create-react-app` já inicializa o Git dentro da pasta do projeto (é como se você tivesse rodado `git init` lá). Em seguida, crie o projeto também no GitHub e conecte seu projeto local ao GitHub (a entrega será por lá)
+- Layout
+    - [X]  O layout é quase o mesmo do Instagram que vocês fizeram no início do curso! A única diferença é o ícone de lápis após o nome da pessoa dona do perfil, como visto abaixo:
+    - [X]  Você pode utilizar o seu próprio código do Instagram para iniciar o projeto ou utilizar o que nós fornecemos no fim desse enunciado 😃
+    
+- CSS e Imagens
+    - [X]  Arquivos CSS podem ser colocados na pasta `public` e linkados diretamente no `index.html` da pasta `public`
+    - [X]  Você também deve criar, dentro da `public`, uma pasta `assets` para colocar as images
+- Componentes
+    - [X]  A página deve ser componentizada em **arquivos diferentes**, utilizando import/export
+        - Lista dos componentes que deverão ser feitos
+            - App
+            - Corpo
+            - SideBar
+            - NavBar
+            - Usuario
+            - Stories (onde cada item será um componente diferente, o Story)
+            - Posts (onde cada item será um componente diferente, o Post)
+            - Sugestoes (onde cada item será um componente diferente, o Sugestao)
+            - Se não entender o que é cada componente, clique aqui 🙂
+                
+    - [X]  Todos os itens repetitivos do projeto devem ser representados como Arrays/Objetos nos componentes e renderizados no JSX usando `map`. No projeto, esses itens são:
+        - Os stories (deve ter pelo menos 2 stories)
+        - Os posts (deve ter pelo menos 2 posts)
+        - As sugestões de seguidores (deve ter pelo menos 2 sugestões)
+        - O usuário acima das sugestões (este não é um array, mas os dados devem vir de props)
+        - Exemplo
+            - Em vez de:
+                
+                ```jsx
+                export default function Lista() {
+                	return (
+                		<ul>
+                			<li>Item 1</li>
+                			<li>Item 2</li>
+                			<li>Item 3</li>
+                		</ul>
+                	);
+                }
+                ```
+                
+            - Você deve seguir a abordagem de:
+                
+                ```jsx
+                export default function Lista() {
+                	const itens = ["Item 1", "Item 2", "Item 3"]
+                
+                	return (
+                		<ul>
+                			{itens.map((item) => <li>{item}</li>)}
+                		</ul>
+                	)
+                }
+                ```
+                
+- Dados Dinâmicos
+    - [X]  O projeto também deverá ter alguns dados dinâmicos que irão mudar na tela. São eles:
+        - [X]  Nome de usuário (ao apertar o lápis, aparece um prompt para alterá-lo)
+            - O texto que deve ser mudado é apenas o que aparece ao lado do lápis!
+                
+        - [X]  Imagem de perfil (ao clicar uma vez na imagem, aparece um prompt pedindo novo link)
+        - [X]  Salvar o post (ao clicar no ícone de salvar o post, ele deverá ficar preenchido)
+        - [X]  Like no post
+            - Ao clicar no ícone do like o usuário poderá curtir a postagem, caso a postagem já esteja curtida ao clicar no ícone a postagem não deve ficar curtida.
+            - Ao clicar na imagem de um post do feed, o usuário poderá curtir a postagem, ou seja, o botão do like deverá ficar preenchido em vermelho
+                - OBS: assim como no Instagram real, clicar na imagem **NÃO** retira likes, apenas adiciona caso já não tenha
+            - O número de likes deverá aumentar quando a pessoa der um like e diminuir quando retirá-lo.
 
-## Available Scripts
+# Bônus
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Like com double click na imagem
+    - [X]  Para dar like clicando na imagem, é necessário clicar duas vezes seguidas, rapidamente.
+        - Clicar duas vezes com um intervalo de tempo grande NÃO CONFIGURA double click.
+- Animação de coração no double click
+    - [X]  Quando ocorrer o double click na imagem, deverá surgir no centro da imagem um coração, que primeiro cresce e depois desaparece, como na imagem abaixo:
+        
+        ![heart.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90738755-1549-45e0-97a3-045251c75e31/heart.gif)
+        
+    - [X]  Parâmetros da animação:
+        - Escala inicial: 0.2
+        - Escala final: 1
+        - Tempo da animação: 0.3s
+        - Cor do coração: white
+        - Após 0.5s, o coração some da tela
