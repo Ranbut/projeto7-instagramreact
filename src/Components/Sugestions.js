@@ -26,6 +26,6 @@ function Sugestion(props){
         <p className="follows-you">{props.itIs}</p>
       </div>
     </div>
-    <p className="seguir">Seguir</p>
+    <p className="follow">Seguir</p>
   </div>);
 }
