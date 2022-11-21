@@ -338,17 +338,12 @@ ion-icon.heart{
   color: #8e8e8e;
 }
 
-.seguir {
+.follow {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
   color: #139ef2;
   transition: all linear 1s;
-}
-
-.seguir:hover {
-  background-color: #127cbe;
-  border-radius: 60%;
 }
 
 .info-intagram p {
