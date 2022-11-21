@@ -1,8 +1,3 @@
-const buttons = ["paper-plane-outline",
-"compass-outline",
-"heart-outline",
-"person-outline"];
-
 export default function NavBar(){
 
     return(
@@ -16,23 +11,18 @@ export default function NavBar(){
             <div className="busca">
                 <input type="text" placeholder="Pesquisar" />
             </div>
-            {buttons.map((type) => (
-            <ButtonNavBar key={type}/>
-         ))}
+            <div className="botoes">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <ion-icon name="compass-outline"></ion-icon>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
         </div>
         <div className="container-topo mobile">
             <ion-icon name="logo-instagram"></ion-icon>
             <img src="assets/img/logo.png" alt="Instagram"/>
             <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
-    </div>
-    );
-}
-
-function ButtonNavBar(type){
-    return(
-    <div className="botoes">
-        <ion-icon name={type}></ion-icon>
     </div>
     );
 }
