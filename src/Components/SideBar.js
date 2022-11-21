@@ -10,7 +10,7 @@ export default function SideBar(){
           <p>Ver tudo</p>
         </div>
         <Sugestion />
-        <div className="info-sobre-intagram">
+        <div className="info-intagram">
           <p>
             Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
             Localizações • Contas mais relevantes • Hashtags • Idioma
