@@ -1,3 +1,7 @@
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.m.wikipedia.org%2Fwiki%2FFicheiro%3AInstagram_icon.png&psig=AOvVaw1KRNtvKQFJSb7wW4P4LKEw&ust=1669090127189000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPDk-rOzvvsCFQAAAAAdAAAAABAD"/>
+
+# Projeto #07 - Instagram [React]
+
 # Requisitos
 
 - Geral
