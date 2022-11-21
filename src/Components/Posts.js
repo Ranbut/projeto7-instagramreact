@@ -53,7 +53,7 @@ function Post(props){
       <div className="rodape-feed">
         <div className="feed-botoes">
           <div>
-            <ion-icon class={isActive ? 'md hydrated liked' : 'md hydrated'} onClick={heartClick} name="heart-outline"></ion-icon>
+            <ion-icon class={isActive ? 'md hydrated liked' : 'md hydrated'} onClick={heartClick} name={isActive ? 'heart' : 'heart-outline'}></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
